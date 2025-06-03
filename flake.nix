@@ -71,6 +71,8 @@
                   enable = true;
                   lazygit.enable = true;
                 };
+
+                binds.whichKey.enable = true;
               };
             }
           ];
