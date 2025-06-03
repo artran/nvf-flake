@@ -75,6 +75,9 @@
                 binds.whichKey.enable = true;
 
                 telescope.enable = true;
+
+                mini.statusline.enable = true;
+                mini.tabline.enable = true;
               };
             }
           ];
