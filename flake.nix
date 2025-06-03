@@ -82,6 +82,9 @@
                 autocomplete.blink-cmp.enable = true;
 
                 assistant.copilot.enable = true;
+
+                autopairs.nvim-autopairs.enable = true;
+                notes.todo-comments.enable = true;
               };
             }
           ];
