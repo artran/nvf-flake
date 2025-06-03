@@ -34,6 +34,38 @@
                 };
 
                 filetree.neo-tree.enable = true; 
+
+                languages = {
+                  enableFormat = true;
+                  enableTreesitter = true;
+
+                  lua = {
+                    enable = true;
+                    lsp.enable = true;
+                  };
+                  markdown = {
+                    enable = true;
+                    lsp.enable = true;
+                    extensions.render-markdown-nvim.enable = true;
+                  };
+                  nix = {
+                    enable = true;
+                    lsp.enable = true;
+                  };
+                  python = {
+                    enable = true;
+                    lsp.enable = true;
+                  };
+                  rust = {
+                    enable = true;
+                    crates.enable = true;
+                    lsp.enable = true;
+                  };
+                  yaml = {
+                    enable = true;
+                    lsp.enable = true;
+                  };
+                };
               };
             }
           ];
