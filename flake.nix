@@ -78,6 +78,8 @@
 
                 mini.statusline.enable = true;
                 mini.tabline.enable = true;
+
+                autocomplete.blink-cmp.enable = true;
               };
             }
           ];
