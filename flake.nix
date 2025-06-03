@@ -80,6 +80,8 @@
                 mini.tabline.enable = true;
 
                 autocomplete.blink-cmp.enable = true;
+
+                assistant.copilot.enable = true;
               };
             }
           ];
