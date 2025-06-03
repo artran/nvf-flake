@@ -17,14 +17,12 @@
           modules = [
             {
               config.vim = {
-                # Enable custom theming options
                 theme = {
                   enable = true;
                   name = "oxocarbon";
                   style = "dark";
                 };
 
-                # Enable Treesitter
                 treesitter.enable = true;
                 treesitter.mappings = {
                   incrementalSelection.init = "<CR>";
@@ -34,6 +32,22 @@
                 };
 
                 filetree.neo-tree.enable = true; 
+
+                keymaps = [
+                  {
+                    mode = "n";
+                    key = "<leader>o";
+                    action = ":Neotree focus<CR>";
+                    desc = "Focus Neo-tree";
+                  }
+
+                  {
+                    mode = "n";
+                    key = "<leader>e";
+                    action = ":Neotree toggle<CR>";
+                    desc = "Toggle Neo-tree";
+                  }
+                ];
 
                 languages = {
                   enableFormat = true;
