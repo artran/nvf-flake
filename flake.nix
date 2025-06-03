@@ -76,8 +76,10 @@
 
                 telescope.enable = true;
 
-                mini.statusline.enable = true;
+                # mini.statusline.enable = true;
                 mini.tabline.enable = true;
+                statusline.lualine.enable = true;
+                # tabline.nvimBufferline.enable = true;
 
                 autocomplete.blink-cmp.enable = true;
 
