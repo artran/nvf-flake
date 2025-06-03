@@ -73,6 +73,8 @@
                 };
 
                 binds.whichKey.enable = true;
+
+                telescope.enable = true;
               };
             }
           ];
