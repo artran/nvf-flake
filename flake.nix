@@ -2,7 +2,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nvf.url = "github:notashelf/nvf";
-    flake-utils.url = "github:numtide/flake-utils";
+    # flake-utils.url = "github:numtide/flake-utils";
   };
 
   outputs = {nixpkgs, ...} @ inputs: {
@@ -22,6 +22,8 @@
 
                 # Enable Treesitter
                 treesitter.enable = true;
+
+                filetree.neo-tree.enable = true; 
               };
             }
           ];
