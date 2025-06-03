@@ -23,17 +23,10 @@
                   style = "dark";
                 };
 
-                treesitter.enable = true;
-                treesitter.mappings = {
-                  incrementalSelection.init = "<CR>";
-                  incrementalSelection.incrementByScope = "<CR>";
-                  incrementalSelection.incrementByNode = "<TAB>";
-                  incrementalSelection.decrementByNode = "<S-TAB>";
-                };
-
-                filetree.neo-tree.enable = true; 
-
                 keymaps = [
+                  ##################################################
+                  # Normal Mode Keymaps
+                  ##################################################
                   {
                     mode = "n";
                     key = "<leader>o";
@@ -47,7 +40,83 @@
                     action = ":Neotree toggle<CR>";
                     desc = "Toggle Neo-tree";
                   }
+
+                  {
+                    mode = "n";
+                    key = "<Leader>q";
+                    action = ":q<CR>";
+                    desc = "Quit";
+                  }
+
+                  {
+                    mode = "n";
+                    key = "<Leader>Q";
+                    action = ":qa<CR>";
+                    desc = "Quit All";
+                  }
+
+                  {
+                    mode = "n";
+                    key = "<Leader>w";
+                    action = ":w<CR>";
+                    desc = "Save";
+                  }
+
+                  {
+                    mode = "n";
+                    key = "<Leader>W";
+                    action = ":wa<CR>";
+                    desc = "Save All";
+                  }
+
+                  {
+                    mode = "n";
+                    key = "<Leader>lc";
+                    action = ":Copilot! attach<CR>";
+                    desc = "Copilot attach";
+                  }
+
+                  {
+                    mode = "n";
+                    key = "<Leader>tf";
+                    action = ":ToggleTerm direction=float<CR>";
+                    desc = "Floating terminal";
+                  }
+
+                  {
+                    mode = "n";
+                    key = "<Leader>th";
+                    action = ":ToggleTerm direction=horizontal<CR>";
+                    desc = "Horizontal terminal";
+                  }
+
+                  {
+                    mode = "n";
+                    key = "<Leader>tv";
+                    action = ":ToggleTerm direction=vertical<CR>";
+                    desc = "Vertical terminal";
+                  }
+
+                  ##################################################
+                  # Insert Mode Keymaps
+                  ##################################################
+                  {
+                    mode = "i";
+                    key = "<C-v>";
+                    action = "<C-o>o";
+                    desc = "Continue on next line";
+                  }
                 ];
+
+                treesitter.enable = true;
+                treesitter.mappings = {
+                  incrementalSelection.init = "<CR>";
+                  incrementalSelection.incrementByScope = "<CR>";
+                  incrementalSelection.incrementByNode = "<TAB>";
+                  incrementalSelection.decrementByNode = "<S-TAB>";
+                };
+
+                filetree.neo-tree.enable = true; 
 
                 languages = {
                   enableFormat = true;
