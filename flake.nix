@@ -18,10 +18,20 @@
             {
               config.vim = {
                 # Enable custom theming options
-                theme.enable = true;
+                theme = {
+                  enable = true;
+                  name = "gruvbox";
+                  style = "dark";
+                };
 
                 # Enable Treesitter
                 treesitter.enable = true;
+                treesitter.mappings = {
+                  incrementalSelection.init = "<CR>";
+                  incrementalSelection.incrementByScope = "<CR>";
+                  incrementalSelection.incrementByNode = "<TAB>";
+                  incrementalSelection.decrementByNode = "<S-TAB>";
+                };
 
                 filetree.neo-tree.enable = true; 
               };
