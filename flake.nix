@@ -17,6 +17,7 @@
           modules = [
             {
               config.vim = {
+                options.clipboard = "unnamedplus";
                 theme = {
                   enable = true;
                   name = "oxocarbon";
