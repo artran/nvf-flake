@@ -117,6 +117,26 @@
                   }
                 ];
 
+                ##################################################
+                # Plugin configuration
+                ##################################################
+                utility.surround = {
+                  enable = true;
+                  setupOpts.keymaps = {
+                    insert = "<C-g>s";
+                    insert_line = "<C-g>S";
+                    normal = "ys";
+                    normal_cur = "yss";
+                    normal_line = "yS";
+                    normal_cur_line = "ySS";
+                    visual = "S";
+                    visual_line = "gS";
+                    delete = "ds";
+                    change = "cs";
+                    change_line = "cS";
+                  };
+                };
+
                 treesitter.enable = true;
                 treesitter.mappings = {
                   incrementalSelection.init = "<CR>";
@@ -127,6 +147,28 @@
 
                 filetree.neo-tree.enable = true; 
 
+                terminal.toggleterm = {
+                  enable = true;
+                  lazygit.enable = true;
+                };
+
+                binds.whichKey.enable = true;
+
+                telescope.enable = true;
+
+                mini.tabline.enable = true;
+                statusline.lualine.enable = true;
+
+                autocomplete.blink-cmp.enable = true;
+
+                assistant.copilot.enable = true;
+
+                autopairs.nvim-autopairs.enable = true;
+                notes.todo-comments.enable = true;
+
+                ##################################################
+                # Language support
+                ##################################################
                 languages = {
                   enableFormat = true;
                   enableTreesitter = true;
@@ -158,25 +200,6 @@
                     lsp.enable = true;
                   };
                 };
-
-                terminal.toggleterm = {
-                  enable = true;
-                  lazygit.enable = true;
-                };
-
-                binds.whichKey.enable = true;
-
-                telescope.enable = true;
-
-                mini.tabline.enable = true;
-                statusline.lualine.enable = true;
-
-                autocomplete.blink-cmp.enable = true;
-
-                assistant.copilot.enable = true;
-
-                autopairs.nvim-autopairs.enable = true;
-                notes.todo-comments.enable = true;
               };
             }
           ];
