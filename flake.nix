@@ -77,6 +77,14 @@
                     desc = "Copilot attach";
                   }
 
+                  # Leaving "action" empty just adds a WhichKey entry with a label
+                  {
+                    mode = "n";
+                    key = "<Leader>t";
+                    action = "";
+                    desc = "ToggleTerm";
+                  }
+
                   {
                     mode = "n";
                     key = "<Leader>tf";
