@@ -166,6 +166,10 @@
                 autopairs.nvim-autopairs.enable = true;
                 notes.todo-comments.enable = true;
 
+                ui.noice = {
+                  enable = true;
+                };
+
                 ##################################################
                 # Language support
                 ##################################################
