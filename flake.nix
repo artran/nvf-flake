@@ -166,6 +166,15 @@
                 autopairs.nvim-autopairs.enable = true;
                 notes.todo-comments.enable = true;
 
+                comments.comment-nvim = {
+                  enable = true;
+                  mappings = {
+                    toggleSelectedBlock = "<Leader>/";
+                    toggleSelectedLine = "<Leader>/";
+                    toggleCurrentLine = "<Leader>/";
+                  };
+                };
+
                 ui.noice = {
                   enable = true;
                 };
