@@ -115,6 +115,13 @@
                     action = "<C-o>o";
                     desc = "Continue on next line";
                   }
+
+                  {
+                    mode = "i";
+                    key = "jj";
+                    action = "<Esc>";
+                    desc = "Better escape";
+                  }
                 ];
 
                 ##################################################
