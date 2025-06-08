@@ -144,12 +144,15 @@
                   };
                 };
 
-                treesitter.enable = true;
-                treesitter.mappings = {
-                  incrementalSelection.init = "<CR>";
-                  incrementalSelection.incrementByScope = "<CR>";
-                  incrementalSelection.incrementByNode = "<TAB>";
-                  incrementalSelection.decrementByNode = "<S-TAB>";
+                treesitter = {
+                  enable = true;
+                  indent.enable = false;
+                  mappings = {
+                    incrementalSelection.init = "<CR>";
+                    incrementalSelection.incrementByScope = "<CR>";
+                    incrementalSelection.incrementByNode = "<TAB>";
+                    incrementalSelection.decrementByNode = "<S-TAB>";
+                  }; 
                 };
 
                 filetree.neo-tree.enable = true; 
