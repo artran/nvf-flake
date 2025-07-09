@@ -165,6 +165,11 @@
                   lazygit.enable = true;
                 };
 
+                git.gitsigns = {
+                  enable = true;
+                  codeActions.enable = true;
+                };
+
                 binds.whichKey.enable = true;
 
                 telescope.enable = true;
