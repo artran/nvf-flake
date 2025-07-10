@@ -109,6 +109,20 @@
                     desc = "Vertical terminal";
                   }
 
+                  {
+                    mode = "n";
+                    key = "|";
+                    action = ":vsplit<CR>";
+                    desc = "Split window vertically";
+                  }
+
+                  {
+                    mode = "n";
+                    key = "_";
+                    action = ":split<CR>";
+                    desc = "Split window horizontally";
+                  }
+
                   ##################################################
                   # Insert Mode Keymaps
                   ##################################################
