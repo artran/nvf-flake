@@ -170,11 +170,17 @@
                   codeActions.enable = true;
                 };
 
+                tabline.nvimBufferline = {
+                  enable = true;
+                  mappings = {
+                    closeCurrent = "<leader>c";
+                  };
+                };
+
                 binds.whichKey.enable = true;
 
                 telescope.enable = true;
 
-                mini.tabline.enable = true;
                 statusline.lualine.enable = true;
 
                 autocomplete.blink-cmp.enable = true;
