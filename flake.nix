@@ -128,7 +128,7 @@
                   ##################################################
                   {
                     mode = "i";
-                    key = "<C-v>";
+                    key = "<C-i>";
                     action = "<C-o>o";
                     desc = "Continue on next line";
                   }
