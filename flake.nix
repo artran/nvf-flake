@@ -20,6 +20,9 @@
           modules = [
             {
               config.vim = {
+                searchCase = "smart";
+                hideSearchHighlight = true;
+
                 options.clipboard = "unnamedplus";
                 theme = {
                   enable = true;
