@@ -121,7 +121,7 @@
 
                   {
                     mode = "n";
-                    key = "_";
+                    key = "\\";
                     action = ":split<CR>";
                     desc = "Split window horizontally";
                   }
