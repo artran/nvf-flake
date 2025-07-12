@@ -5,7 +5,11 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = {nixpkgs, flake-utils, ...} @ inputs:
+  outputs = {
+    nixpkgs,
+    flake-utils,
+    ...
+  } @ inputs:
     flake-utils.lib.eachSystem [
       "aarch64-darwin"
       "x86_64-darwin"
@@ -172,10 +176,15 @@
                     incrementalSelection.incrementByScope = "<CR>";
                     incrementalSelection.incrementByNode = "<TAB>";
                     incrementalSelection.decrementByNode = "<S-TAB>";
-                  }; 
+                  };
                 };
 
-                filetree.neo-tree.enable = true; 
+                filetree.neo-tree = {
+                  enable = true;
+                  setupOpts = {
+                    close_if_last_window = true;
+                  };
+                };
 
                 terminal.toggleterm = {
                   enable = true;
