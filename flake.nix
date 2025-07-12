@@ -237,6 +237,11 @@
                   enableFormat = true;
                   enableTreesitter = true;
 
+                  bash = {
+                    enable = true;
+                    lsp.enable = true;
+                    extraDiagnostics.enable = true;
+                  };
                   lua = {
                     enable = true;
                     lsp.enable = true;
@@ -245,6 +250,10 @@
                     enable = true;
                     lsp.enable = true;
                     extensions.render-markdown-nvim.enable = true;
+                  };
+                  nu = {
+                    enable = true;
+                    lsp.enable = true;
                   };
                   nix = {
                     enable = true;
