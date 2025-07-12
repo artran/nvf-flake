@@ -24,6 +24,7 @@
           modules = [
             {
               config.vim = {
+                undoFile.enable = true;
                 searchCase = "smart";
                 hideSearchHighlight = true;
 
