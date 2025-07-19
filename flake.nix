@@ -35,6 +35,21 @@
                   style = "dark";
                 };
 
+                extraPlugins = with pkgs.vimPlugins; {
+                  vim-tmux-navigator = {
+                    package = vim-tmux-navigator;
+                  };
+                  better-escape-nvim = {
+                    package = better-escape-nvim;
+                    setup = ''
+                      require("better_escape").setup({
+                        timeout = 300;
+                        default_mappings = true;
+                      });
+                    '';
+                  };
+                };
+
                 keymaps = [
                   ##################################################
                   # Normal Mode Keymaps
@@ -141,22 +156,15 @@
                     desc = "Continue on next line";
                   }
 
-                  {
-                    mode = "i";
-                    key = "jj";
-                    action = "<Esc>";
-                    desc = "Better escape";
-                  }
-
                   ##################################################
                   # Terminal Mode Keymaps
                   ##################################################
-                  {
-                    mode = "t";
-                    key = "<Esc>";
-                    action = "<C-\\><C-n>";
-                    desc = "Exit terminal mode";
-                  }
+                  # {
+                  #   mode = "t";
+                  #   key = "<Esc>";
+                  #   action = "<C-\\><C-n>";
+                  #   desc = "Exit terminal mode";
+                  # }
                 ];
 
                 ##################################################
